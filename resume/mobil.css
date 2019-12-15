@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 700px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.grid-container {
+  display: grid; 
+  grid-gap: 3px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 10% 10% 10 10% 10%;
+  grid-template-areas:
+  " f "
+  " l "
+  " c "
+  " a "
+  " e "
+  " x ";
+
+}
+
+.firstname {
+  grid-area: f;
+  background-color: rgba(226, 198, 202);
+  text-align: right;
+  font-size: 35px;
+  text-emphasis-color: rgb(255, 255, 255);
+  font-family: 'Assistant', sans-serif;
+ 
+}
+
+.career {
+  grid-area: c;
+  background-color: rgba(226, 198, 202);
+  text-align: left;
+  font-size: 35px;
+
+}
+
+.lastname {
+  grid-area: f;
+  background-color: rgba(233, 171, 192, 0.863);
+  text-align: left;
+  font-size: 35px;
+  text-emphasis-color: #f5eeeeec(205, 215);
+  font-family: 'Assistant', sans-serif,;
+
+}
+
+.address {
+  grid-area: a;
+  background-color: rgb(255, 237, 242);
+  text-align: left;
+
+}
+
+.education {
+  grid-area: e;
+  background-color: rgba(246, 227, 228);
+  list-style-type: circle;
+  
+}
+
+ul.demo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.experience {
+  grid-area: x;
+  background-color:  rgba(250, 250, 252);
+  list-style-type: circle;
+}
+
+svg {
+  position: fixed;
+  Left: 300ox;
+  top:0%;
+  left:85%;
+  width:10%;
+  height:10%;
+  fill: rgb(180, 144, 150);
+  background: url(yfavicon.svg) no-repeat 50px center;
+  -webkit-animation:color 5s linear infinite;
+  animation:color 5s linear infinite;
+  
+}
+
+
+@keyframes  color {
+2% {
+  fill:rgb(139, 127, 129);
+}
+12% {
+  fill:rgb(161, 135, 139);
+}
+24% {
+  fill:rgb(170, 127, 134);
+}
+36% {
+  fill:rgb(190, 160, 165);
+}
+48% {
+  fill: rgb(206, 156, 164);
+}
+  60% {
+  color:rgb(206, 158, 166);
+}
+72% {
+  fill:rgb(224, 182, 189);
+}
+80% {
+  fill: rgb(179, 140, 146);
+}
+}

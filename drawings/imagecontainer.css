@@ -1,0 +1,194 @@
+.imageContainer{
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(7, auto);
+  max-width: 24rem;
+  margin: 0 auto;
+  height: 100%;
+}
+ 
+  img {
+    margin: 0;
+    position: relative;
+    filter: grayscale(100);
+    transition: filter .5s ease-in-out;
+
+  }
+  img:hover {
+    filter: none;
+    z-index: 3;
+  }
+  img:nth-child(1) {
+    grid-area: 1 / 2 / 4 / 3;
+  }
+  img:nth-child(2) {
+    grid-area: 2 / 2 / 5 / 4;
+    z-index: 2;
+  }
+  img:nth-child(3) {
+    grid-area: 3 / 3 / 7 / 5;
+  }
+
+
+
+ul.demo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  
+  }
+
+a:link, a:visited {
+    color: rgba(117, 53, 69, 0.76);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+  }
+
+body {
+  margin: 0;
+  background-color: rgba(226, 198, 202);
+  font-size: 20px;
+  
+}
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 30px;
+
+}
+
+/* Left and right column */
+.column.side {
+  width: 80%;
+  background-color: rgb(247, 241, 241);
+  color: rgba(117, 53, 69, 0.76);
+  font-family: 'Economica', sans-serif;
+  font-size: 20px;
+  
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column {
+    width: 100%;
+
+  }
+}
+nav {
+  display: inline;
+  font-family: 'Economica', sans-serif;
+  font-size: 25px;
+
+}
+
+a:hover, a:active {
+  color: rgb(255, 255, 255);
+  }
+
+
+div {
+    display: block;
+
+  }
+
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+
+  }
+
+  * {
+    box-sizing: border-box;
+  
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+
+  h2{
+    color: rgb(153, 149, 152);
+    font-family: 'Economica', sans-serif;
+  
+  }
+  svg {
+    position: fixed;
+    Left: 300ox;
+    top:0%;
+    left:85%;
+    width:10%;
+    height:10%;
+    fill: rgb(170, 128, 135);
+    background: url(yfavicon.svg) no-repeat 50px center;
+    -webkit-animation:color 5s linear infinite;
+    animation:color 5s linear infinite;
+    
+  }
+
+
+@keyframes  color {
+  2% {
+    fill:rgb(117, 88, 93);
+  }
+  12% {
+    fill:rgb(145, 108, 114);
+  }
+  24% {
+    fill:rgb(170, 127, 134);
+  }
+  36% {
+    fill:rgb(192, 145, 153);
+  }
+  48% {
+    fill: rgb(206, 156, 164);
+  }
+    60% {
+    color:rgb(206, 158, 166);
+  }
+  72% {
+    fill:rgb(224, 182, 189);
+  }
+  80% {
+    fill: rgb(170, 127, 134);
+  }
+}

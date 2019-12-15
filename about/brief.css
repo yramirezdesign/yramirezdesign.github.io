@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+	margin: auto;
+	margin-top: 40px;
+	background-color: rgba(226, 198, 202);
+} 
+
+.container {
+  display: grid;
+	grid-template-rows: 10% auto 10%;
+  height: 90vh;
+  background-color: rgb(247, 241, 241);
+  border-radius: 0px;
+  padding: 85px;
+  
+}
+
+.about {
+  font-family: 'Economica', sans-serif;
+  font-size: 25px; 
+  padding-left: 520px;
+  margin-top: -1px;
+  color: rgba(117, 53, 69, 0.76);
+
+}
+
+nav {
+	grid-column: 1 / -1;
+	grid-row: 1/-1; 
+	z-index: 1; 
+  display:inline;
+	margin-left: 26px;
+    
+}
+
+.main {
+	grid-column: 2 / -1;
+	grid-row: 2/-1;
+	z-index:1;
+	padding-left: 400px;
+  margin-top: -10px; 
+  
+}
+
+img {
+	grid-column: 2 / -1;
+	grid-row: 2/-1;
+	z-index:1;
+	margin-left: -25px; 
+	margin-top: 60px; 
+	position: absolute; 
+	
+}
+  
+img:hover {
+	filter: inherit;
+	z-index: 3;
+	position: absolute;
+	filter: grayscale(100);
+	transition: filter .5s ease-in-out;
+}
+
+h1 {
+	color: rgb(180, 144, 150);
+	font-size: 3em; 
+  font-family: 'Economica', sans-serif;
+  padding-left: 520px;
+  
+}
+
+h2 {
+	color: rgb(180, 144, 150);
+	font-size: 30px; 
+  font-family: 'Economica', sans-serif;
+  padding-left: 520px;
+  margin-top: -30px; 
+
+}
+
+p {
+  color: rgb(180, 144, 150);
+  font-size: 30px;
+  font-family: 'Economica', sans-serif;
+  padding-left: 520px
+
+}
+
+ul {
+  list-style-type: none;
+  margin-top: -145px;
+  margin-left: -110px;
+  /* overflow: hidden; */
+  background-color: rgb(170, 121, 129);
+  font-family: 'Economica', sans-serif;
+  font-size: 25px;
+  }
+  
+li {
+    float: left;
+    padding-top: 10px;
+    padding: 7px;
+  }
+  
+ li a {
+    display: inline;
+    color: rgba(117, 53, 69, 0.76);
+    text-align: center;
+    padding: 18px 17px;
+    text-decoration: none; 
+  }
+  
+  li a:hover {
+  width: 130px; 
+  color: rgb(255, 255, 255);
+  } 
+
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+ svg {
+    position: fixed;
+    Left: 300ox;
+    top:0%;
+    left:85%;
+    width:10%;
+    height:10%;
+    fill: rgb(170, 128, 135);
+    background: url(yfavicon.svg) no-repeat 50px center;
+    -webkit-animation:color 5s linear infinite;
+    animation:color 5s linear infinite;
+    
+  }
+
+
+@keyframes  color {
+  2% {
+    fill:rgb(117, 88, 93);
+  }
+  12% {
+    fill:rgb(145, 108, 114);
+  }
+  24% {
+    fill:rgb(170, 127, 134);
+  }
+  36% {
+    fill:rgb(192, 145, 153);
+  }
+  48% {
+    fill: rgb(206, 156, 164);
+  }
+    60% {
+    color:rgb(206, 158, 166);
+  }
+  72% {
+    fill:rgb(224, 182, 189);
+  }
+  80% {
+    fill: rgb(170, 127, 134);
+  }
+}
+  
